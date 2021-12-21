@@ -1,6 +1,17 @@
+import React, { useState, useEffect } from 'react';
+import Nav from './main/nav';
 
 export default function App() {
+  const [logIn, setlogIn] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setlogIn({username: 'Yishay'})
+    }, 2000)
+  }, []);
+  
   return (
-    <h1>Hello World</h1>
+    <>
+      <Nav logIn={logIn}/>
+    </>
   );
 }

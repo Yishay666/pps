@@ -11,7 +11,7 @@ export default function Router(props){
         <BrowserRouter>
             <Header logIn={props.logIn}/>
             <Routes>
-                {/* components */}
+                {/* components, needs to be created */}
                 {/* <Route exact path="/settings" element={<Settings />} />
                 <Route exact path="/notifications" element={<Notifications />} />
                 <Route exact path="/messages" element={<Chats />} />

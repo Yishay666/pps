@@ -5,10 +5,10 @@ export default class Header extends React.Component {
     render() {
       return (
           <nav>
-              {!this.props.logIn ? (
+              {!this.props.User ? (
                 <Link to='/login'>LogIn / SignUp</Link>
               ) : (
-                <h2>Hello, {this.props.logIn.username}!</h2>
+                <h2>Hello, {this.props.User}!</h2>
               )}
               <ul>
                   <li><Link to="/">Home</Link></li>

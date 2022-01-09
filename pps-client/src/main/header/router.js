@@ -9,7 +9,7 @@ import LogIn from './login'
 export default function Router(props){
     return (
         <BrowserRouter>
-            <Header logIn={props.logIn}/>
+            <Header User={props.User}/>
             <Routes>
                 {/* components, needs to be created */}
                 {/* <Route exact path="/settings" element={<Settings />} />
